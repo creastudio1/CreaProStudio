@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CréaPro Studio - Création et Gestion de Contenu Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1F2937;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section {
+            background: url('https://mylittlebigweb.com/wp-content/uploads/2024/01/meilleur-logiciel-creation-site-web-jpg.webp') no-repeat center center;
+            background-size: cover;
+            height: 100vh; /* Occupe toute la hauteur de l'écran */
+            width: 100%; /* Occupe toute la largeur de l'écran */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: #333;
+        }
+
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            inset: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            z-index: 10;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+            background: rgba(31, 41, 55, 0.8);
+        }
+
+        main {
+            padding-top: 80px;
+        }
+
+        .service-card {
+    		position: relative;
+    		background-size: cover;
+			background-position: center;
+    		height: 300px;
+   			border-radius: 15px;
+    		overflow: hidden;
+    		transition: transform 0.3s ease-in-out;
+    		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+
+        .service-card:hover {
+    		transform: scale(1.05);
+		}
+
+        .service-overlay {
+    		background-color: rgba(0, 0, 0, 0.7);
+    		position: absolute;
+    		display: flex;
+    		flex-direction: column;
+			justify-content: flex-end;
+			padding: 20px;
+    		width: 100%;
+    		height: 0; /* Commence avec une hauteur de 0 */
+    		max-height: 100%; /* Assure que la bande ne dépasse jamais la taille du conteneur */
+    		overflow: hidden; /* Cache tout ce qui dépasse */
+    		transition: height 0.3s ease-in-out; /* Transition en douceur sur la hauteur */
+}
+
+        .service-card:hover .service-overlay {
+    		height: 50%; /* Ajuste la hauteur à 50% lorsqu'on passe la souris */
+    		transform: translateY(0); /* Remet l'overlay à sa position d'origine */
+		}
+
+        footer {
+            background-color: #1F2937;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #FFA500;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 60vh; /* Ajuste la hauteur pour les petits écrans */
+        }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .service-card {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="transition duration-300 ease-in-out">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+            <h1 class="text-3xl font-bold text-white">CréaPro Studio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#services" class="text-white hover:text-yellow-400 transition">Services</a></li>
+                <li><a href="#about" class="text-white hover:text-yellow-400 transition">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-white">
+                <h2 class="text-5xl font-bold mb-6 animate__fadeInDown">Votre partenaire en contenu digital</h2>
+                <p class="text-xl max-w-2xl mx-auto mb-8 animate__fadeInUp">
+                    Chez CréaPro Studio, nous transformons vos idées en réalités numériques captivantes. Contactez-nous à <a href="mailto:creaprostudio@yahoo.com" class="text-yellow-400 underline">creaprostudio@yahoo.com</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-12 text-gray-800">Nos Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="service-card" style="background-image: url('https://kamelecom.fr/wp-content/uploads/2023/05/expertise-creation-logo10.jpg');">
+                        <a href="Logo.html">
+                        	<div class="service-overlay">
+                            	<h3 class="text-2xl font-bold text-white">Création de logos</h3>
+                            	<p class="text-white">Des logos uniques et mémorables pour votre marque.</p>
+                        	</div>
+                        </a>
+                    </div>
+
+                    <div class="service-card" style="background-image: url('https://www.codeur.com/blog/wp-content/uploads/2021/01/creation-site.jpg');">
+                        <a href="SiteWWW.html">
+                        	<div class="service-overlay">
+                            	<h3 class="text-2xl font-bold text-white">Conception de sites web</h3>
+                            	<p class="text-white">Des sites web modernes, réactifs et optimisés pour le SEO.</p>
+                        	</div>
+                        </a>
+                    </div>
+
+                    <div class="service-card" style="background-image: url('https://www.tiz.fr/app/uploads/2017/11/video-entreprise-tiz-scaled.jpeg');">
+                        <a href="Video.html">
+                        	<div class="service-overlay">
+                            	<h3 class="text-2xl font-bold text-white">Création de vidéos</h3>
+                            	<p class="text-white">Des vidéos captivantes et professionnelles pour promouvoir votre marque.</p>
+                        	</div>
+                        </a>
+                    </div>
+
+                    <div class="service-card" style="background-image: url('https://memoredaction.com/wp-content/uploads/2023/12/Correction-de-traduction.png');">
+                        <a href="Traduction.html">
+                        	<div class="service-overlay">
+                            	<h3 class="text-2xl font-bold text-white">Traduction et correction</h3>
+                            	<p class="text-white">Des services de traduction et correction de textes de qualité.</p>
+                        	</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-12 text-gray-800">À Propos de Nous</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
+                    Chez CréaPro Studio, notre mission est de fournir des services de création de contenu digital de haute qualité. 
+                    Notre équipe d'experts est dédiée à transformer vos idées en produits numériques captivants.
+                </p>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Que vous ayez besoin d'un logo, d'un site web, d'une vidéo, ou de services de traduction, 
+                    nous sommes là pour vous accompagner à chaque étape.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto">
+            <p>&copy; 2024 CréaPro Studio. Tous droits réservés.</p>
+            <p>Contactez-nous à <
+            <p>Contactez-nous à <a href="mailto:creaprostudio@yahoo.com" class="underline">creaprostudio@yahoo.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

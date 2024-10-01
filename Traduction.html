@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CréaPro Studio - Services de Traduction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section {
+            background-color: #1F2937; /* Fond sombre */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+        }
+
+        .pricing-card {
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #1F2937;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #FFA500;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="text-4xl font-bold mb-4">Services de Traduction</h1>
+        <p class="text-lg">Des traductions précises et de qualité pour vos documents</p>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-800">Nos Tarifs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Économie Package -->
+                <div class="pricing-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="pricing-header bg-gray-800 text-white p-5">
+                        <h3 class="text-2xl font-bold">Économie</h3>
+                        <p class="pricing-price text-4xl">0.05€/mot</p>
+                    </div>
+                    <div class="pricing-body p-5">
+                        <p class="text-lg mb-4">Traduction de texte général</p>
+                        <p class="text-gray-600 mb-6">Délai de création : 3 à 5 jours</p>
+                        <a href="mailto:creaprostudio@yahoo.com?subject=Demande%20de%20Service%20Traduction%20Économie&body=Bonjour,%0D%0A%0D%0AJe%20souhaite%20faire%20appel%20au%20service%20Économie%20pour%20une%20traduction%20de%20texte%20général.%0D%0A%0D%0AMerci%20de%20me%20contacter%20pour%20plus%20d'informations.%0D%0A%0D%0ACordialement," class="bg-yellow-400 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">Choisir ce pack</a>
+                    </div>
+                </div>
+
+                <!-- Normal Package -->
+                <div class="pricing-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="pricing-header bg-gray-800 text-white p-5">
+                        <h3 class="text-2xl font-bold">Normal</h3>
+                        <p class="pricing-price text-4xl">0.10€/mot</p>
+                    </div>
+                    <div class="pricing-body p-5">
+                        <p class="text-lg mb-4">Traduction de texte spécialisé</p>
+                        <p class="text-gray-600 mb-6">Délai de création : 5 à 7 jours</p>
+                        <a href="mailto:creaprostudio@yahoo.com?subject=Demande%20de%20Service%20Traduction%20Normal&body=Bonjour,%0D%0A%0D%0AJe%20souhaite%20faire%20appel%20au%20service%20Normal%20pour%20une%20traduction%20de%20texte%20spécialisé.%0D%0A%0D%0AMerci%20de%20me%20contacter%20pour%20plus%20d'informations.%0D%0A%0D%0ACordialement," class="bg-yellow-400 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">Choisir ce pack</a>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="pricing-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="pricing-header bg-gray-800 text-white p-5">
+                        <h3 class="text-2xl font-bold">Premium</h3>
+                        <p class="pricing-price text-4xl">0.15€/mot</p>
+                    </div>
+                    <div class="pricing-body p-5">
+                        <p class="text-lg mb-4">Traduction certifiée</p>
+                        <p class="text-gray-600 mb-6">Délai de création : 7 à 10 jours</p>
+                        <a href="mailto:creaprostudio@yahoo.com?subject=Demande%20de%20Service%20Traduction%20Premium&body=Bonjour,%0D%0A%0D%0AJe%20souhaite%20faire%20appel%20au%20service%20Premium%20pour%20une%20traduction%20certifiée.%0D%0A%0D%0AMerci%20de%20me%20contacter%20pour%20plus%20d'informations.%0D%0A%0D%0ACordialement," class="bg-yellow-400 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">Choisir ce pack</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto">
+            <p>&copy; 2024 CréaPro Studio. Tous droits réservés.</p>
+            <p>Contactez-nous à <a href="mailto:creaprostudio@yahoo.com" class="underline">creaprostudio@yahoo.com</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
